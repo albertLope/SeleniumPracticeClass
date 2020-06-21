@@ -1,4 +1,4 @@
-package Day1;
+package Day3;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
-public class a5TagLocatorFindMultipleElements {
+public class _04_TagLocatorFindMultipleElements {
 
 
 
@@ -19,6 +19,7 @@ public class a5TagLocatorFindMultipleElements {
             But here is how we can use the tag locator.
 
          */
+
         System.setProperty("webdriver.chrome.driver", "D:\\Selenium dependency\\drivers\\chromedriver.exe");
 
         // open the browser

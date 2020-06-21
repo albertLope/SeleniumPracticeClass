@@ -1,6 +1,6 @@
-package Day1;
+package Day3;
 
-public class a1Intro {
+public class _01_Intro {
 
     /*
         1) Get the libraries in the project
@@ -14,14 +14,12 @@ public class a1Intro {
             CSS
             Xpath
 
-        3) We can use html if needed.
 
         4) First example for the class http://www.practiceselenium.com/  Look --> a2 ID Start class
 
                Students learned testNG so instead of using System.out.println we can use Assert.assertEquals or assertTrue
 
         5) Second example website for the elements http://demo.guru99.com/test/login.html a3IDPractice
-
               We will give some example about the ID this time and we can use the assert as well.
 
         6) Third example for the website http://demo.guru99.com/test/accessing-link.html to practice a4LinkTextPartialLinkText

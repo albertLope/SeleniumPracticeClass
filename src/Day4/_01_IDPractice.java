@@ -1,13 +1,12 @@
-package Day1;
+package Day4;
 
 import org.junit.Assert;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class a3IDPractice {
+public class _01_IDPractice {
 
     public static void main(String[] args) throws InterruptedException {
 

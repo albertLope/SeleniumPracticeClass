@@ -1,10 +1,10 @@
-package Day1;
+package Day3;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class a2IDStart {
+public class _02_IDStart {
 
     public static void main(String[] args) throws InterruptedException {
 

@@ -1,4 +1,4 @@
-package Day1;
+package Day4;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class a8ExtraExample {
+public class _03_ExtraExample {
 
     public static void main(String[] args) {
 

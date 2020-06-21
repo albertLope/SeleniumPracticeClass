@@ -1,4 +1,4 @@
-package Day1;
+package Day3;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -6,12 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class a6IDClassCSSTask {
-
-    /*
-
-
-     */
+public class _03IDClassCSSTask {
 
     public static void main(String[] args) {
 
