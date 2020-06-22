@@ -5,13 +5,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class _05_CssDetail {
+public class _04_CssDetail {
 
     public static void main(String[] args) {
 
         /*
 
             https://guide.blazemeter.com/hc/en-us/articles/211544089
+
+            ID start with --> ul[id^='categories']
+            ID contains --> ul[id*='ories']
+            ID ends with --> ul[id$='categories']
 
             What is parent and child relationship in the HTML?
 
@@ -29,25 +33,9 @@ public class _05_CssDetail {
              Click on "BlazeMeter's Usage Report: A Tutorial" text
                div[class='article-body markdown']>ul>li[class='wysiwyg-text-align-left']:nth-child(3)  We can find better css
 
-            ID start with --> ul[id^='categories']
-            ID contains --> ul[id*='ories']
-            ID ends with --> ul[id$='categories']
-
             Find the specific child ul[id='categories']>li:nth-child(4)
 
          */
-
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium dependency\\drivers\\chromedriver.exe");
-
-        // open the browser
-        WebDriver driver = new ChromeDriver();
-
-        driver.get("http://samples.gwtproject.org/samples/Showcase/Showcase.html#!CwNumberFormat");
-
-        driver.manage().window().maximize();
-
-        WebElement currency = driver.findElement(By.cssSelector("select[class='gwt-ListBox']>option:nth-child(2)"));
-        System.out.println(currency.getText());
 
 
     }
