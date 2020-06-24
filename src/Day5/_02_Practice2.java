@@ -19,12 +19,10 @@ public class _02_Practice2 {
 
         driver.manage().window().maximize();
 
-
         WebElement username = driver.findElement(By.id("user-name"));
         username.sendKeys("standard_user");
 
         WebElement password = driver.findElement(By.id("password"));
-
         password.sendKeys("secret_sauce");
 
         WebElement buttonLogin = driver.findElement(By.xpath("//input[@class='btn_action']"));

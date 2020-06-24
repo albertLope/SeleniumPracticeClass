@@ -35,6 +35,5 @@ public class _01_Practice1 {
 
         Assert.assertEquals("Epic sadface: Sorry, this user has been locked out.",errMessageText );
 
-
     }
 }

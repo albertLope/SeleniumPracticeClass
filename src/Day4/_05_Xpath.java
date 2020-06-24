@@ -18,6 +18,7 @@ public class _05_Xpath {
 
         driver.manage().window().maximize();
 
+
         /*
 
             basic XPATH
@@ -32,7 +33,6 @@ public class _05_Xpath {
            absolute xpath is finding the absolute location of the element it is usually long and easy to break
 
            Relative xpath is finding from the text or any attribute of the element
-
 
             basic xpath - what is xpath
               // tagName [ @ attributeName = ' attributeValue ']
