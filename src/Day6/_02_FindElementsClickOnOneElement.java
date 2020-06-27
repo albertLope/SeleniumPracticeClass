@@ -16,7 +16,7 @@ public class _02_FindElementsClickOnOneElement extends BaseDriver {
         String username = "standard_user";
         String password = "secret_sauce";
 
-        _03_XPathLoginFunction.login(username , password);
+        _01_XPathLoginFunctionTest.login(username , password);
 
         List<WebElement> listOfAllElements = driver.findElements(By.xpath("//div[@class='inventory_item_name']"));
 
@@ -30,6 +30,7 @@ public class _02_FindElementsClickOnOneElement extends BaseDriver {
         listOfAllElements = driver.findElements(By.xpath("//div[@class='inventory_item_name']"));
         whichElementToClick = "Sauce Labs Bolt T-Shirt";
         whichItem(listOfAllElements ,whichElementToClick );
+
     }
 
     public static void whichItem(List<WebElement> elementList , String whichElement){
@@ -45,6 +46,5 @@ public class _02_FindElementsClickOnOneElement extends BaseDriver {
         }
 
     }
-
 
 }

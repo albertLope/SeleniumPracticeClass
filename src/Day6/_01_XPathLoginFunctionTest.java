@@ -26,4 +26,19 @@ public class _01_XPathLoginFunctionTest extends BaseDriver {
         }
         driver.quit();
     }
+
+    public static String login( String user , String password) {
+        driver.findElement(By.xpath("//*[@id=\"user-name\"]")).clear();
+        driver.findElement(By.xpath("//*[@id=\"user-name\"]")).sendKeys(user);
+        driver.findElement(By.xpath("//*[@id=\"password\"]")).clear();
+        driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys(password);
+        driver.findElement(By.xpath("//input[@class='btn_action']")).click();
+        try {
+            driver.findElement(By.xpath("//*[@id=\"menu_button_container\"]")); // can find user menu
+            return "Login successful!";
+        } catch (NoSuchElementException e) {
+            String text = driver.findElement(By.xpath("//*[@id=\"password\"]//following-sibling::h3")).getText();
+            return "Login failed! Error Message: " + text;
+        }
+    }
 }

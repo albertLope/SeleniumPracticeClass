@@ -16,7 +16,7 @@ public class _04_FindElementsClickOnAllItems extends BaseDriver {
         String username = "standard_user";
         String password = "secret_sauce";
 
-        _03_XPathLoginFunction.login(username, password);
+        _01_XPathLoginFunctionTest.login(username, password);
 
         List<WebElement> listOfAllElements = driver.findElements(By.xpath("//button[@class='btn_primary btn_inventory']"));
 
