@@ -25,9 +25,7 @@ public class _01_Methods extends BaseDriver {
          */
 
         boolean displayed = element.isDisplayed();
-
         boolean enabled = element.isEnabled();
-
         boolean selected = element.isSelected();
 
         System.out.println("Friday before click "+displayed);
@@ -36,14 +34,11 @@ public class _01_Methods extends BaseDriver {
 
         /*
             Click on the element and check is element displayed enabled and selected
-
          */
         element.click();
 
         displayed = element.isDisplayed();
-
         enabled = element.isEnabled();
-
         selected = element.isSelected();
 
         System.out.println("Friday after click "+displayed);
@@ -79,14 +74,8 @@ public class _01_Methods extends BaseDriver {
         System.out.println(inputNotAvailable.isDisplayed());
          */
 
-        try{
-            WebElement inputNotAvailable = driver.findElement(By.xpath("//label[text()='wrongXpath']/preceding-sibling::input"));
-            System.out.println(inputNotAvailable.isDisplayed());
-        }catch (NoSuchElementException e){
-            System.out.println("element is not found ");
-        }
-
-
+        System.out.println("-------------");
+        System.out.println(driver.findElement(By.xpath("(//*[@aria-hidden='true'])[10]")).isDisplayed());
 
     }
 
