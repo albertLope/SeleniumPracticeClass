@@ -21,7 +21,7 @@ public class _03_Exercice extends BaseDriver {
 
         driver.findElement(By.xpath("//button[@class='searchformButton col-xs-4 rippleGrey']")).click();
 
-        driver.findElement(By.xpath("//p[@title='Airpod 2 AIRPOD 2 ( 128 MB , 1 GB ) White']")).click();
+        driver.findElement(By.xpath("(//p[@class='product-title '])[1]")).click();
 
         Set<String> handles = driver.getWindowHandles();
 
@@ -38,7 +38,7 @@ public class _03_Exercice extends BaseDriver {
 
         }
 
-        String text = driver.findElement(By.xpath("//p[text()='Airpod 2 AIRPOD 2 ( 128 MB , 1 GB ) White']")).getText();
+        String text = driver.findElement(By.xpath("//h1[@class='pdp-e-i-head']")).getText();
 
         WebElement addToCart = driver.findElement(By.xpath("//span[text()='add to cart']"));
 

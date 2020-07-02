@@ -1,10 +1,10 @@
-package Day11;
+package Day10;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import utils.BaseDriver;
 
-public class _08_AlertPart3 extends BaseDriver {
+public class _03_AlertPart3 extends BaseDriver {
 
     public static void main(String[] args) {
 
