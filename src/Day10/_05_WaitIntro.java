@@ -20,6 +20,12 @@ public class _05_WaitIntro extends BaseDriver {
                 Specifies the amount of time the driver should wait when searching for an element if it is not immediately present.
                 driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 
+            Implicit Wait
+                Throws a NoSuchElementException when the element is not present in the DOM
+                Throws a ElementNotVisibleException when element is present in the DOM, however, it is hidden and cannot be interacted with
+
+            Explicit Wait
+                Explicit wait in Selenium throws a WebDriverTimeoutException, depending on your expected condition
 
             Explicit wait is for the element
                 When I finish the action for the element.

@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utils.BaseDriver;
 
-public class _02_NewBrowser extends BaseDriver {
+public class _07_NewBrowser extends BaseDriver {
 
     public static void main(String[] args) {
 

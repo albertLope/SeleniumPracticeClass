@@ -8,7 +8,7 @@ import utils.BaseDriver;
 import java.util.concurrent.TimeUnit;
 
 
-public class _04_IFrame_SwitchByNameID extends BaseDriver {
+public class _01_IFrame_SwitchByNameID extends BaseDriver {
 
     public static void main(String[] args) {
 
@@ -17,8 +17,7 @@ public class _04_IFrame_SwitchByNameID extends BaseDriver {
         driver.get("https://chercher.tech/practice/frames");
 
 //        Switching to frame
-//        driver.switchTo().frame("frame1");//switch by the id
-        driver.switchTo().frame(0);// switch by index
+        driver.switchTo().frame("frame1");//switch by the id
 
         driver.findElement(By.xpath("//input[@type='text']")).sendKeys("Hello World");
 

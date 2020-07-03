@@ -16,8 +16,6 @@ public class _04_Practice extends BaseDriver {
         List<WebElement> l1 = driver.findElements(By.className("property-name-link"));
 
         while(l1.size()<100){
-
-
             JavascriptExecutor js = (JavascriptExecutor) driver;
 
             js.executeScript("arguments[0].scrollIntoView();", l1.get(l1.size()-1));

@@ -8,7 +8,7 @@ import utils.BaseDriver;
 import java.util.concurrent.TimeUnit;
 
 
-public class _05_IFrame_SwitchByWebElement extends BaseDriver {
+public class _05_IFrame_Exercise extends BaseDriver {
 
     public static void main(String[] args) {
 
@@ -33,5 +33,6 @@ public class _05_IFrame_SwitchByWebElement extends BaseDriver {
         driver.findElement(By.linkText("Continue with template")).click();
 
     }
+
 }
 

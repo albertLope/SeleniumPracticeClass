@@ -17,7 +17,6 @@ public class _06_ImplicitWaitExercise extends BaseDriver {
         driver.get("http://seleniumpractise.blogspot.com/2016/08/how-to-use-explicit-wait-in-selenium.html");
 
         WebElement clickOn = driver.findElement(By.xpath("//button[text()='Click me to start timer']"));
-
         clickOn.click();
 
         WebElement text = driver.findElement(By.xpath("//p[text()='WebDriver']"));

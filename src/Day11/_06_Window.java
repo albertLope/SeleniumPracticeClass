@@ -6,7 +6,7 @@ import utils.BaseDriver;
 
 import java.util.Set;
 
-public class _01_Window extends BaseDriver {
+public class _06_Window extends BaseDriver {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -15,10 +15,6 @@ public class _01_Window extends BaseDriver {
         WebElement newTab = driver.findElement(By.id("tabButton"));
 
         newTab.click();
-        newTab.click();
-        newTab.click();
-        newTab.click();
-
 
         Set<String> handles = driver.getWindowHandles();
 

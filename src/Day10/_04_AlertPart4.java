@@ -9,6 +9,7 @@ public class _04_AlertPart4 extends BaseDriver {
     public static void main(String[] args) {
 
         driver.get("https://www.seleniumeasy.com/test/javascript-alert-box-demo.html");
+
         driver.findElement(By.cssSelector("button[onclick='myConfirmFunction()']")).click();
 
         // press accept on alert

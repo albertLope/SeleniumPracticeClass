@@ -23,5 +23,6 @@ public class _03_AlertPart3 extends BaseDriver {
         // confirm that the result test contains test string
         boolean contains = actualText.contains(testString);
         Assert.assertTrue("Actual text should contain the test string!", contains);
+
     }
 }
