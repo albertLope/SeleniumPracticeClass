@@ -28,8 +28,10 @@ public class _07_NewBrowser extends BaseDriver {
         // Close the new window, if that window no more required
         driver.close();
 
-        // Switch back to original browser (first window)
+//        // Switch back to original browser (first window)
         driver.switchTo().window(winHandleBefore);
+
+        System.out.println(driver.getCurrentUrl());
 
     }
 

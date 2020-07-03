@@ -22,16 +22,11 @@ public class _01_Intro_ScrolByPixel extends BaseDriver {
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        driver.get("https://www.youtube.com/");
+        driver.get("https://triplebyte.com/?ref=yt_20190826_t1_blade_skippable_2_animation&gclid=Cj0KCQiAvc_xBRCYARIsAC5QT9lHGgKp8Pta1S7Q8JRv42jozGtchlQfMpmfMQSqP5zXLWMngA-xK_caAhtlEALw_wcB");
 
-        driver.findElement(By.xpath("//input[@id='search']")).sendKeys("Selenium");
 
-        driver.findElement(By.id("search-icon-legacy")).click();
-
-        Thread.sleep(2000);
-
-            JavascriptExecutor js = (JavascriptExecutor) driver;
-            js.executeScript("window.scrollBy(0,5000)");
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,5000)");
 
     }
 
