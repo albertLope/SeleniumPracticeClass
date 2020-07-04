@@ -11,8 +11,8 @@ public class _08_multipleWindow extends BaseDriver {
 
     public static void main(String[] args) throws InterruptedException {
         driver.get("https://www.selenium.dev/");
-        String mainWindowHandle = driver.getWindowHandle();
-        System.out.println("Main Window Handle: " + mainWindowHandle);
+        String parentWindow = driver.getWindowHandle();
+        System.out.println("Main Window Handle: " + parentWindow);
 
         List<WebElement> links = driver.findElements(By.cssSelector("a[target=_blank]"));
         for(WebElement link: links) {
@@ -24,7 +24,7 @@ public class _08_multipleWindow extends BaseDriver {
             System.out.println(handle);
             // we are already focused on main window
             // so don't need to switch to it again
-            if(!handle.equals(mainWindowHandle)) {
+            if(!handle.equals(parentWindow)) {
                 driver.switchTo().window(handle);
                 System.out.println("Window Title: " +  driver.getTitle());
             }

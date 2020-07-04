@@ -28,7 +28,7 @@ public class _05_IFrame_Exercise extends BaseDriver {
 
         driver.findElement(By.xpath("//input[@placeholder='First']")).sendKeys("Hello");
 
-//        driver.switchTo().defaultContent();
+        driver.switchTo().parentFrame();
 
         driver.findElement(By.linkText("Continue with template")).click();
 

@@ -18,7 +18,7 @@ public class _02_IFramesTwoLevelsDeep extends BaseDriver {
         driver.switchTo().frame("frame3");
         System.out.println("B: " +  driver.findElement(By.tagName("b")).getText());
 
-        driver.switchTo().defaultContent(); // bring me to main content
+//        driver.switchTo().defaultContent(); // bring me to main content
         System.out.println("Label: " +  driver.findElement(By.tagName("label")).getText());
 
     }

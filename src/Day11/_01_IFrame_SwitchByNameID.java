@@ -2,11 +2,8 @@ package Day11;
 
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import utils.BaseDriver;
-
 import java.util.concurrent.TimeUnit;
-
 
 public class _01_IFrame_SwitchByNameID extends BaseDriver {
 
@@ -22,7 +19,6 @@ public class _01_IFrame_SwitchByNameID extends BaseDriver {
         driver.findElement(By.xpath("//input[@type='text']")).sendKeys("Hello World");
 
         driver.switchTo().defaultContent();
-
 
     }
 }
