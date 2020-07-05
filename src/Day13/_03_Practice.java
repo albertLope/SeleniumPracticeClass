@@ -1,4 +1,4 @@
-package Repl;
+package Day13;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-public class Practice extends BaseDriver {
+public class _03_Practice extends BaseDriver {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -94,17 +94,14 @@ public class Practice extends BaseDriver {
 
         driver.findElement(By.id("billing_postcode")).sendKeys("07078");
 
-//        WebDriverWait wait = new WebDriverWait(driver,10);
-//
-//        WebElement placeHolder = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='place_order']")));
-//        Thread.sleep(2000);
+        Thread.sleep(2000);
 
         WebElement placeHolder = driver.findElement(By.xpath("//input[@id='place_order']"));
         placeHolder.click();
 
-//        WebElement totalAmount = driver.findElement(By.xpath("//th[text()='Total:']/parent::tr//td/span"));
-//
-//        Assert.assertEquals(total , totalAmount.getText());
+        WebElement totalAmount = driver.findElement(By.xpath("//th[text()='Total:']/parent::tr//td/span"));
+
+        Assert.assertEquals(total , totalAmount.getText());
 
     }
 

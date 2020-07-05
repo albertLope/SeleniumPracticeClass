@@ -1,4 +1,4 @@
-package Day13;
+package Day14;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -10,19 +10,13 @@ import utils.BaseDriver;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.NoSuchElementException;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
-public class _02_MakeTheCodeLess extends BaseDriver {
+public class _01_Exercise extends BaseDriver {
 
     public static void main(String[] args) throws InterruptedException {
 
         driver.get("https://pwa-woo.wpmobilepack.com/#/category/88");
-
-//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-//        driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
 
         ArrayList<String> nameList = new ArrayList<>();
 
@@ -152,7 +146,6 @@ public class _02_MakeTheCodeLess extends BaseDriver {
         for(int i = 0 ; i < l1.size() ; i++){
 
             total += stringToDouble(l1.get(i).getText());
-
         }
         return total;
      }
