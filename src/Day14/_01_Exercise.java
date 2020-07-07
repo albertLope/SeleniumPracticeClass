@@ -146,6 +146,7 @@ public class _01_Exercise extends BaseDriver {
         for(int i = 0 ; i < l1.size() ; i++){
 
             total += stringToDouble(l1.get(i).getText());
+
         }
         return total;
      }

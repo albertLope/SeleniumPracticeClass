@@ -1,5 +1,6 @@
 package Day12;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import utils.BaseDriver;
 
@@ -12,6 +13,16 @@ public class _03_ScrollToBottomOfThePage extends BaseDriver {
         driver.manage().window().maximize();
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+
+        driver.switchTo().defaultContent();
+
+        driver.switchTo().frame("do-it-iframe");
+
+        driver.findElement(By.xpath("//input[@placeholder='Search …']")).sendKeys("asd");
+
+        driver.findElement(By.xpath("//input[@value='Search']")).click();
 
         js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
 

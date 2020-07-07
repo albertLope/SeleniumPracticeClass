@@ -11,7 +11,7 @@ import utils.BaseDriver;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class _05_ScrollPractice2 extends BaseDriver {
+public class _07_ScrollPractice2 extends BaseDriver {
 
     public static void main(String[] args) throws InterruptedException {
 

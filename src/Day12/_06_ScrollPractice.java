@@ -7,7 +7,7 @@ import utils.BaseDriver;
 
 import java.util.List;
 
-public class _04_ScrollPractice extends BaseDriver {
+public class _06_ScrollPractice extends BaseDriver {
 
     public static void main(String[] args) {
 

@@ -12,9 +12,7 @@ public class _02_UploadAFile extends BaseDriver {
 
     public static void main(String[] args) throws InterruptedException, AWTException {
 
-        String baseUrl = "http://demo.guru99.com/test/upload/";
-
-        driver.get(baseUrl);
+        driver.get("http://demo.guru99.com/test/upload/");
 
         WebElement uploadElement = driver.findElement(By.xpath("//div[@id='file_wraper0']"));
 

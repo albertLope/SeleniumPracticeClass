@@ -8,7 +8,7 @@ import utils.BaseDriver;
 import java.awt.*;
 
 
-public class _04_Exercise2 extends BaseDriver {
+public class _05_Exercise2 extends BaseDriver {
 
     public static void main(String[] args) throws AWTException {
 
