@@ -20,11 +20,13 @@ public class _04_Practice extends BaseDriver {
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        driver.get("http://practice.automationtesting.in/");
+        driver.get("http://practice.automationtesting.in/shop/");
 
-        List<WebElement> e1 = driver.findElements(By.xpath("//img[@class='attachment-shop_catalog size-shop_catalog wp-post-image']"));
+        List<WebElement> e1 = driver.findElements(By.xpath("//a[text()='Add to basket']/parent::li//img"));
 
-        e1.get(randomGenerator(e1.size())).click();
+        int rand =randomGenerator(e1.size());
+        System.out.println(rand);
+        e1.get(rand).click();
 
         String thinkingText = driver.findElement(By.tagName("h1")).getText();
 
@@ -47,7 +49,6 @@ public class _04_Practice extends BaseDriver {
         String productNameCart = driver.findElement(By.xpath("//td[@class='product-name']//a")).getText();
 
         Assert.assertEquals(productNameCart , thinkingText);
-
 
         String priceCart = driver.findElement(By.xpath("//td[@class='product-price']")).getText();
         double priceCartDouble = StringToDouble(priceCart);
@@ -103,6 +104,7 @@ public class _04_Practice extends BaseDriver {
 
         Assert.assertEquals(total , totalAmount.getText());
 
+        driver.quit();
     }
 
     public static int randomGenerator(int max){

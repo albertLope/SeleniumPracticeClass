@@ -7,13 +7,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.BaseDriver;
 
-import java.util.concurrent.TimeUnit;
 
 public class _07_ActionClassPractice2 extends BaseDriver {
 
     public static void main(String[] args) throws InterruptedException {
-
-//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         WebDriverWait wait =new WebDriverWait(driver , 10);
 
@@ -29,7 +26,7 @@ public class _07_ActionClassPractice2 extends BaseDriver {
 
         actions.moveToElement(BecomeAMember).perform();
 
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         WebElement teacher = driver.findElement(By.xpath("//li[@class='category child-3']/a[text()='Teachers']"));
 

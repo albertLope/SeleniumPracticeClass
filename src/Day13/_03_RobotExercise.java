@@ -17,6 +17,7 @@ public class _03_RobotExercise extends BaseDriver {
         rbt.keyPress(KeyEvent.VK_S);
 
         Thread.sleep(2000);
+
         rbt.keyRelease(KeyEvent.VK_CONTROL);
 
         rbt.keyPress(KeyEvent.VK_ENTER);

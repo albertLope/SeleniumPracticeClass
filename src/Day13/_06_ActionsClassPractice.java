@@ -19,7 +19,7 @@ public class _06_ActionsClassPractice extends BaseDriver {
 
         WebDriverWait wait =new WebDriverWait(driver , 10);
 
-        wait.until(ExpectedConditions.elementToBeClickable(BecomeAMember));
+//      wait.until(ExpectedConditions.elementToBeClickable(BecomeAMember));
 
         actions.moveToElement(BecomeAMember).perform();
 
@@ -27,5 +27,10 @@ public class _06_ActionsClassPractice extends BaseDriver {
 
         Arts.click();
 
+        String text = driver.findElement(By.xpath("//article//h1")).getText();
+
+        System.out.println(text);
+
     }
+
 }
